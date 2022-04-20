@@ -1,0 +1,274 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &1520353209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1520353211}
+  - component: {fileID: 1520353210}
+  m_Layer: 0
+  m_Name: Game Runner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1520353210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520353209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e90f9cc3a125ace4282d2ed9656ed352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isProductionBuild: 0
+  makeEventSystem: 1
+  gameManagerPrefab: {fileID: 3213266488033454984, guid: c5b16e2f811e92d4c996c1e794f94f22, type: 3}
+  analyticsConfig:
+    useAnalytics: 1
+    gameAnalytics: {fileID: 1602661936230679842, guid: 5f31bec79b92fb84788a5072b9719522, type: 3}
+    gameAnalyticsGameKey: 
+    gameAnalyticsSecretKey: 
+    adjustPrefab: {fileID: 115478, guid: a3267720e82aa41c1a05ab29824902b4, type: 3}
+    adjustToken: 
+  adConfig:
+    isTestBuild: 1
+    iterationType: 0
+    adServices:
+    - network: 0
+      appID: 4402151
+      units:
+        banner: dsad
+        interstitial: dsa
+        rewarded: sa
+    - network: 1
+      appID: 4402151
+      units:
+        banner: dsad
+        interstitial: dsa
+        rewarded: sa
+  uiConfig:
+    privacyURL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+    agreementsText: "Privacy Policy\r\n\r\nSilverlake key built the **** app as a
+      Free app. This SERVICE is provided by Silverlake key at no cost and is intended
+      for use as is.\r\nThis page is used to inform visitors regarding our policies
+      with the collection, use, and disclosure of Personal Information if anyone
+      decided to use our Service.\r\nIf you choose to use our Service, then you agree
+      to the collection and use of information in relation to this policy. The Personal
+      Information that we collect is used for providing and improving the Service.
+      We will not use or share your information with anyone except as described in
+      this Privacy Policy.\r\nThe terms used in this Privacy Policy have the same
+      meanings as in our Terms and Conditions, which are accessible at **** unless
+      otherwise defined in this Privacy Policy.\r\n\r\nInformation Collection and
+      Use\r\n\r\nFor a better experience, while using our Service, we may require
+      you to provide us with certain personally identifiable information. The information
+      that we request will be retained by us and used as described in this privacy
+      policy.\r\nThe app does use third-party services that may collect information
+      used to identify you.\r\nLink to the privacy policy of third-party service
+      providers used by the app\r\n\u2022\tGoogle Play Services\r\n\u2022\tAdMob\r\n\u2022\tGoogle
+      Analytics for Firebase\r\n\u2022\tFirebase Crashlytics\r\n\u2022\tUnity\r\n\u2022\tGameAnalytics\r\n\u2022\tAdjust\r\n\r\nLog
+      Data\r\n\r\nWe want to inform you that whenever you use our Service, in a case
+      of an error in the app we collect data and information (through third-party
+      products) on your phone called Log Data. This Log Data may include information
+      such as your device Internet Protocol (\u201CIP\u201D) address, device name,
+      operating system version, the configuration of the app when utilizing our Service,
+      the time and date of your use of the Service, and other statistics.\r\nCookies\r\n\r\nCookies
+      are files with a small amount of data that are commonly used as anonymous unique
+      identifiers. These are sent to your browser from the websites that you visit
+      and are stored on your device's internal memory.\r\nThis Service does not use
+      these \u201Ccookies\u201D explicitly. However, the app may use third-party
+      code and libraries that use \u201Ccookies\u201D to collect information and
+      improve their services. You have the option to either accept or refuse these
+      cookies and know when a cookie is being sent to your device. If you choose
+      to refuse our cookies, you may not be able to use some portions of this Service.\r\n\r\nService
+      Providers\r\n\r\nWe may employ third-party companies and individuals due to
+      the following reasons:\r\n\u2022\tTo facilitate our Service;\r\n\u2022\tTo
+      provide the Service on our behalf;\r\n\u2022\tTo perform Service-related services;
+      or\r\n\u2022\tTo assist us in analyzing how our Service is used.\r\nWe want
+      to inform users of this Service that these third parties have access to their
+      Personal Information. The reason is to perform the tasks assigned to them on
+      our behalf. However, they are obligated not to disclose or use the information
+      for any other purpose.\r\n\r\nSecurity\r\n\r\nWe value your trust in providing
+      us your Personal Information, thus we are striving to use commercially acceptable
+      means of protecting it. But remember that no method of transmission over the
+      internet, or method of electronic storage is 100% secure and reliable, and
+      we cannot guarantee its absolute security.\r\n\r\nLinks to Other Sites\r\n\r\nThis
+      Service may contain links to other sites. If you click on a third-party link,
+      you will be directed to that site. Note that these external sites are not operated
+      by us. Therefore, we strongly advise you to review the Privacy Policy of these
+      websites. We have no control over and assume no responsibility for the content,
+      privacy policies, or practices of any third-party sites or services.\r\n\r\nChildren\u2019s
+      Privacy\r\n\r\nThese Services do not address anyone under the age of 13. We
+      do not knowingly collect personally identifiable information from children
+      under 13 years of age. In the case we discover that a child under 13 has provided
+      us with personal information, we immediately delete this from our servers.
+      If you are a parent or guardian and you are aware that your child has provided
+      us with personal information, please contact us so that we will be able to
+      do the necessary actions.\r\n\r\nChanges to This Privacy Policy\r\n\r\nWe may
+      update our Privacy Policy from time to time. Thus, you are advised to review
+      this page periodically for any changes. We will notify you of any changes by
+      posting the new Privacy Policy on this page.\r\nThis policy is effective as
+      of 2022-04-09\r\n\r\nContact Us\r\n\r\nIf you have any questions or suggestions
+      about our Privacy Policy, do not hesitate to contact us at silverlakekey@gmail.com.\r"
+    tutorialFingerType: 1
+    uiManagerPrefab: {fileID: 5176213419815781659, guid: 271e030da97c7c043b44ac9c617c0281, type: 3}
+    showLevelText: 0
+    progressIndicatorType: 1
+    passedSprite: {fileID: 21300000, guid: 829212c20ba2ea642ac6037415712f87, type: 3}
+    notPassedSprite: {fileID: 21300000, guid: 7729c5769760b02478481ba8d631efbf, type: 3}
+    themeSprites:
+    - {fileID: 21300000, guid: 7cc3590aae4bfd74fa199fece6e0c26d, type: 3}
+    - {fileID: 21300000, guid: 5cb029aab0fa27144a51693e87da6a79, type: 3}
+    - {fileID: 21300000, guid: c675899e3780b9f45a9105c6b1c131a5, type: 3}
+    bossSpritePassed: {fileID: 21300000, guid: 735991e1ea128df46b997b572c7955f5, type: 3}
+    bossSpriteNotPassed: {fileID: 21300000, guid: eb6a5bd14d050be4ea7e40bb9feb80a8, type: 3}
+  mainCurrency: {fileID: 11400000, guid: 97fdd39b3f1d7fc40934c8d9943638ef, type: 2}
+  easySaveManagerPrefab: {fileID: 107673581648617634, guid: 5914836ee24b38d4e8cf46307cddf538, type: 3}
+  logVibrationInEditor: 1
+  shortVibrationDurationInMilliseconds: 50
+  longVibrationDurationInMilliseconds: 150
+--- !u!4 &1520353211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520353209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
