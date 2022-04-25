@@ -1,3 +1,5 @@
-public class Panel : UIElement {
-    
+namespace Medrick.Nardeboon {
+    public class Panel : UIElement {
+        
+    }
 }
