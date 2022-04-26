@@ -17,5 +17,6 @@
   "unity": "2020.3",
   "dependencies": {
     "com.unity.ads": "3.7.5"
-  }
+  },
+  "documentationUrl": "https://github.com/URAmiRBin/nardebaam/blob/main/README.md"
 }
