@@ -77,6 +77,11 @@ In order to save you can use `ES3.Save` and to load use `ES3.Load`. Read the [do
 
 
 ## Audio
+A basic audio manager system is implemented in the framework
+
+![Audio Config](/images/audio.png)
+
+To use music or sfx, you can call `Runner.AudioPlayer.PlayMusic` or `Runner.AudioPlayer.PlaySFX` and feed in the audio you want. you can use the preset sound effects which is stored in `Runner.SoundEffects`.
 
 ## Haptics
 
