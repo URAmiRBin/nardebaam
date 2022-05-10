@@ -9,8 +9,6 @@ Nardeboon is a comprehensive package that implements all the needed services for
         - [Admob](#admob)
         - [UnityAds](#unityads)
     - [Analytics](#analytics)
-        - [GameAnalytics](#gameanalytics)
-        - [Adjust](#adjust)
     - [Save](#save)
     - [Audio](#audio)
     - [Haptics](#haptics)
@@ -52,6 +50,25 @@ UnityAds is an in-engine package and handles advertisements natively from the en
 To show any ads, use `Runner.AdManager` and then call the `ShowInterstitial` or `ShowRewarded` or `ShowBanner` to show an ad if available. you can pass success and fail callbacks to handle what happens if an ad is shown or could not be shown. some of these callbacks should change UI states and will be handled within the framework in the next iterations.
 
 ## Analytics
+
+To monitor the events of the game, we can use analytics packages to provide the data so we can analyze them and make our games better.
+
+Nardeboon uses **GameAnalytics** and **Adjust** for analytics purposes, but the developers have the option to choose between these services, if they desire any.
+
+![Analytics config](/images/analytics-config.png)
+
+To use the analytics system, all the developers have to do is to invoke one of these events:
+
+- `NardeboonEvents.GameLogicEvents.onLevelStart`
+- `NardeboonEvents.GameLogicEvents.onLevelWin`
+- `NardeboonEvents.GameLogicEvents.onLevelLose`
+- `NardeboonEvents.onCustomEvent`
+- `NardeboonEvents.EconomyEvents.onCurrencyEarn`
+- `NardeboonEvents.EconomyEvents.onCurrencySpend`
+- `NardeboonEvents.AdEvents.onAdFail`
+- `NardeboonEvents.AdEvents.onAdShow`
+
+Note that these events can be used in other cases, for example onLevelStart is called whenever the player starts a level, with this event, the UI system as well as the analytics system will react and change the panel.
 
 ## Save
 
