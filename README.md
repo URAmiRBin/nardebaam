@@ -118,6 +118,18 @@ The panels include:
 
 # Install
 
+To install the package you can use Unity's package manager and import the package using a git url and enter `https://github.com/urAmiRBin/nardebaam/https://github.com/urAmiRBin/nardebaam/` in the text field. The installation might take several minutes since the external packages and the UI images takes a load of space.
+
+![Install](/images/install.png)
+
 # Use
 
+After intsalling the package you have to change the build settings and add the loader scene in the build scenes, **the loader scene must be in index 0 and your core game scene should be next**
+
+![Build](/images/build.png)
+
+You can implement the ICore interface and the Runner will be connected to the game automatically. A sample ICore is implemented in `Game Interface/CoreGameManager`.
+
 # Suggestions
+
+Please leave your suggestion in the issues of this repository or email me directly at ur.amirbin@gmail.com, any suggestion would be appreciated.
