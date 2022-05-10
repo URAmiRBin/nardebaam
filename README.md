@@ -71,6 +71,10 @@ To use the analytics system, all the developers have to do is to invoke one of t
 Note that these events can be used in other cases, for example onLevelStart is called whenever the player starts a level, with this event, the UI system as well as the analytics system will react and change the panel.
 
 ## Save
+Nardeboon uses [EasySave3](https://docs.moodkie.com/product/easy-save-3/) which is a paid package in order to handle the saves.
+
+In order to save you can use `ES3.Save` and to load use `ES3.Load`. Read the [documentations](https://docs.moodkie.com/product/easy-save-3/) for more details.
+
 
 ## Audio
 
