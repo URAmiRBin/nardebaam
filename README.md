@@ -95,6 +95,12 @@ To use vibration you can use `Runner.VibrationManager.ShortVibrate` or `Runner.V
 
 ## Economy
 
+Nardeboon comes with an internal economy system in which you can define your own items in it and use the built-in inventory system or connect it to the shop.
+
+The items can be defined in `Resources/Items` folder and the InventorySystem will fetch all the items at the startup.
+
+![Item](/images/game-item.png)
+
 ## UI
 
 # Install
