@@ -85,6 +85,14 @@ To use music or sfx, you can call `Runner.AudioPlayer.PlayMusic` or `Runner.Audi
 
 ## Haptics
 
+The vibration calls can be called from the core game logic to give more agency to the developers or from the game events within the framework. There are two basic vibration call presets (short and long vibration) which can be set from the package interface.
+
+![Haptics](/images/vibration.png)
+
+To use vibration you can use `Runner.VibrationManager.ShortVibrate` or `Runner.VibrationManager.LongVibrate`. you can also use the custom `Vibrate` method in VibrationManager and have the vibration go for your desired duration.
+
+> Note that the framework prevents multiple vibration calls and cancels the previous vibration to call for another vibration first.
+
 ## Economy
 
 ## UI
