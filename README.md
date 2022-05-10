@@ -9,6 +9,8 @@ Nardeboon is a comprehensive package that implements all the needed services for
         - [Admob](#admob)
         - [UnityAds](#unityads)
     - [Analytics](#analytics)
+        - [GameAnalytics](#gameanalytics)
+        - [Adjust](#adjust)
     - [Save](#save)
     - [Audio](#audio)
     - [Haptics](#haptics)
@@ -31,14 +33,23 @@ To intialize AdManager you have to pass `Adconfig` to it, which has three fields
 
 `iterationType` is used when you have multiple ad networks. 
 
-In absolute mode, AdManager always prioritize the network that comes first and only uses the next ad network when the first one is not ready.
+In **Absolute** mode, AdManager always prioritize the network that comes first and only uses the next ad network when the first one is not ready.
 
-In Loop mode, AdManager loops through ad services and do not prioritize over any ad network.
+In **Loop** mode, AdManager loops through ad services and do not prioritize over any ad network. If one ad network is not available at the time, AdManager skips over that one for that iteration.
+
+![Advertisement Config](/images/adconfig.png)
 
 ### Admob
-Admob is Google's mobile ads and comes with External Dependency Manager
+Admob is Google's mobile ads and comes with External Dependency Manager by default.
 
 ### UnityAds
+UnityAds is an in-engine package and handles advertisements natively from the engine.
+
+> Note that duplicate ad services is not tested, hence it's not supported. The editor logs an error if duplicate ad networks is found but does not do anything further than that, so the developers should be aware of this.
+
+> UnityAds does not pause the game when the ad is loaded and being shown to the player, so the developers should handle that (which will be handled by the package in the next iterations)
+
+To show any ads, use `Runner.AdManager` and then call the `ShowInterstitial` or `ShowRewarded` or `ShowBanner` to show an ad if available. you can pass success and fail callbacks to handle what happens if an ad is shown or could not be shown. some of these callbacks should change UI states and will be handled within the framework in the next iterations.
 
 ## Analytics
 
