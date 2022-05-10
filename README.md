@@ -103,6 +103,19 @@ The items can be defined in `Resources/Items` folder and the InventorySystem wil
 
 ## UI
 
+The UI system which is tightly connected to the core framework uses all the UI moduels that a hyper casual game need.
+
+The panels include:
+- Splash/Loading screen
+- Game Start panel
+- Win panel
+- Lose panel
+- Shop panel (which is connected to the economy system)
+- Settings panel
+- Popup
+- Gameplay screen
+- Agreements panel
+
 # Install
 
 # Use
