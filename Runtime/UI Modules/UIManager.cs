@@ -84,6 +84,11 @@ namespace Medrick.Nardeboon {
             elements.coin.text = amount;
         }
 
+        public void SetLevelReward(string reward)
+        {
+            elements.nextLevelReward.text = reward;
+        }
+
         void HandleLevelWin(int level) {
             SetLevelText(level + 1);
             NardeboonEvents.UIEvents.onStateChange?.Invoke(GameStates.Win);

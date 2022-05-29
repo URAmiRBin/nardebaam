@@ -4867,6 +4867,7 @@ MonoBehaviour:
     retryButton: {fileID: 5728665007605614362}
     reviveButton: {fileID: 5215596563338900027}
     nextLevelButton: {fileID: 4473026138298409218}
+    nextLevelReward: {fileID: 3523789876660891363}
     settingsButton: {fileID: 7986377464802606146}
     closeSettingsButton: {fileID: 6767522247080530184}
     levelTexts:

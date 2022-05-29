@@ -8,6 +8,7 @@ namespace Medrick.Nardeboon {
         public Button retryButton;
         public Button reviveButton;
         public Button nextLevelButton;
+        public Text nextLevelReward;
         public Button settingsButton;
         public Button closeSettingsButton;
         public Text[] levelTexts;
