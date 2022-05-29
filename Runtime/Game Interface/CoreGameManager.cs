@@ -56,12 +56,12 @@ namespace Medrick.Nardeboon {
         public void WinLevel() {
             NardeboonEvents.GameLogicEvents.onLevelWin?.Invoke(_level);
             ES3.Save(SaveKeys.LEVEL, _level + 1);
-            Runner.AudioPlayer.PlaySFX(Runner.SoundEffects.win);  
+            Runner.AudioPlayer?.PlaySFX(Runner.SoundEffects.win);  
         }
 
         public void LoseLevel() {
             NardeboonEvents.GameLogicEvents.onLevelLose?.Invoke(_level);
-            Runner.AudioPlayer.PlaySFX(Runner.SoundEffects.gameover);
+            Runner.AudioPlayer?.PlaySFX(Runner.SoundEffects.gameover);
         }
 
         public void Revive() {}
