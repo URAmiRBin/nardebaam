@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using com.adjust.sdk;
+using Facebook.Unity;
 using UnityEngine.EventSystems;
 
 namespace Medrick.Nardeboon {
@@ -47,6 +48,7 @@ namespace Medrick.Nardeboon {
         // Dependencies
         public static AnalyticsSystem GameAnalytics {get; private set;}
         public static AnalyticsSystem AdjustAnalytics {get; private set;}
+        public static AnalyticsSystem FacebookAnalytics { get; private set; }
         
         void Awake() {
             // FIXME: Start the loading process before setting up services not after it
@@ -136,6 +138,22 @@ namespace Medrick.Nardeboon {
                 } catch (Exception) {
                     Debug.LogError("Can not initialize Adjust!");
                 }
+            }
+
+            if (analyticsConfig.useFacebook)
+            {
+                FacebookAnalytics = new FacebookAnalytics();
+                FB.Init(
+                    () =>
+                    {
+                        if (FB.IsInitialized)
+                        {
+                            FB.ActivateApp();
+                            FacebookAnalytics.Initialize();
+                        }
+                    }
+                    , delegate(bool shown) { }
+                    );
             }
         }
 
