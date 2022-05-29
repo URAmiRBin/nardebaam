@@ -53,7 +53,7 @@ To show any ads, use `Runner.AdManager` and then call the `ShowInterstitial` or 
 
 To monitor the events of the game, we can use analytics packages to provide the data so we can analyze them and make our games better.
 
-Nardeboon uses [GameAnalytics](https://github.com/googleads/googleads-mobile-unity) and [Adjust](https://github.com/adjust/unity_sdk) for analytics purposes, but the developers have the option to choose between these services, if they desire any.
+Nardeboon uses [GameAnalytics](https://github.com/googleads/googleads-mobile-unity), [Adjust](https://github.com/adjust/unity_sdk) and [Facebook](https://developers.facebook.com/docs/unity/gettingstarted) for analytics purposes, but the developers have the option to choose between these services, if they desire any.
 
 ![Analytics config](/images/analytics-config.png)
 
