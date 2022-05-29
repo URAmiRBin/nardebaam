@@ -28,5 +28,8 @@ namespace Medrick.Nardeboon {
         public GameObject adjustPrefab;
         [ConditionalHide("useAdjust", true)]
         public string adjustToken;
+        
+        // TODO: Bake other facebook options into analytics config
+        [Header("Facebook")] public bool useFacebook;
     }
 }
